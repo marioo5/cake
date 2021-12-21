@@ -127,10 +127,9 @@ $this->loadHelper('Authentication.Identity');
                     <div class="arrange arrange-middle">
                         <div class="arrange-fill">
                             <ul class="list-inline">
-                                <li class="mrs xs-mrxxs"><a href="" aria-label="Change.org"
-                                        class="header-height link-stealth"><span
-                                            class="symbol symbol-wordmark type-branded symbol-xxl"
-                                            aria-hidden="true"></span></a></li>
+                                <li class="mrs xs-mrxxs"><?php    
+                                            echo $this->Html->link('', ['aria-label' => 'Change.org', 'controller' => 'Pages', 'action' => 'display', '_full' => true],
+                                            ['class' => 'symbol symbol-wordmark type-branded symbol-xxl']); ?></li>
                                 <li class="mrm hidden-xs hidden-sm">
                                     <div class="nav">
                                         <ul class="list-inline">
@@ -139,8 +138,9 @@ $this->loadHelper('Authentication.Identity');
                                             echo $this->Html->link('Inicia una petición', ['controller' => 'Peticiones', 'action' => 'add', '_full' => true],
                                             ['class' => 'link-stealth header-height']); ?>
                                             </li>
-                                            <li class="mrs"><a href="login_or_join/redirectedcd24.html"
-                                                    class="link-stealth header-height"><span>Mis peticiones</span></a>
+                                            <li class="mrs"><?php    
+                                            echo $this->Html->link('Mis Peticiones', ['controller' => 'Peticiones', 'action' => 'index', '_full' => true],
+                                            ['class' => 'link-stealth header-height']); ?>
                                             </li>
                                             <li class="mrs"><a href="petitions.html" data-pass-thru="true"
                                                     class="link-stealth header-height"><span>Más peticiones</span></a>

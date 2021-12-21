@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\Event\EventInterface;
 /**
  * Peticiones Controller
  *
@@ -40,6 +41,12 @@ class PeticionesController extends AppController
         ]);
 
         $this->set(compact('peticione'));
+    }
+
+    public function beforeFilter(EventInterface $event){
+
+        parent::beforeFilter($event);
+        $this->Authentication->addUnauthenticatedActions(['peticiones']);
     }
 
     /**
