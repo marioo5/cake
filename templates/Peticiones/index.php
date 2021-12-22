@@ -16,6 +16,7 @@
                     <th><?= $this->Paginator->sort('estado') ?></th>
                     <th><?= $this->Paginator->sort('categorias_id') ?></th>
                     <th><?= $this->Paginator->sort('users_id') ?></th>
+                    <th><?= $this->Paginator->sort('photo') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('updated') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
