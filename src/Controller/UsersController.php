@@ -93,10 +93,12 @@ class UsersController extends AppController
 
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
-        if ($result->isValid()) {
+        $rol = $this->Authentication->getResult()->getData()->rol;
+        if ($result->isValid() && $rol == "admin") {
+            $redirect = $this->request->getQuery('redirect', ['controller' => 'Peticiones', 'action' => 'admin',]);
+            return $this->redirect($redirect);
+        }elseif ($result->isValid()){
             $redirect = $this->request->getQuery('redirect', ['controller' => 'Peticiones', 'action' => 'index',]);
-
-
             return $this->redirect($redirect);
         }
 

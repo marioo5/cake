@@ -29,6 +29,43 @@ class PeticionesController extends AppController
     }
 
     /**
+     * Admin method
+     */
+
+    public function admin(){
+        $this->paginate = [
+            'contain' => ['Categorias'], 
+        ];
+
+        $peticiones = $this->Peticiones;
+        $peticiones = $this->paginate($peticiones);
+        $this->set(compact('peticiones'));
+    }
+
+    /**
+     * Change state method
+     * 
+     * Chenge the state pending to accept
+     */
+
+    public function change($id = null){
+        $peticione = $this->Peticiones->get($id, [
+            'contain' => ['Users'],
+        ]);
+
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $peticione = $this->Peticiones->patchEntity($peticione, $this->request->getData()->estado);
+            if ($this->Peticiones->save($peticione)) {
+                $this->Flash->success(__('The peticione has been saved.'));
+
+                return $this->redirect(['action' => 'admin']);
+            }
+            $this->Flash->error(__('The peticione could not be saved. Please, try again.'));
+        }
+
+    }
+
+    /**
      * View method
      *
      * @param string|null $id Peticione id.
@@ -47,7 +84,7 @@ class PeticionesController extends AppController
     public function beforeFilter(EventInterface $event){
 
         parent::beforeFilter($event);
-        $this->Authentication->addUnauthenticatedActions(['peticiones']);
+        $this->Authentication->addUnauthenticatedActions(['view']);
     }
 
     /**
