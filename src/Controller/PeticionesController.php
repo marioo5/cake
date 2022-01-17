@@ -19,6 +19,7 @@ class PeticionesController extends AppController
      */
     public function index()
     {
+        $this->Authorization->skipAuthorization();
         $id = $this->Authentication->getResult()->getData()->id;
         $this->paginate = [
             'contain' => ['Categorias'], 
@@ -26,6 +27,7 @@ class PeticionesController extends AppController
         $peticiones = $this->paginate($this->Peticiones->find()->where(['users_id'=>$id]));
 
         $this->set(compact('peticiones'));
+        
     }
 
     /**
@@ -33,11 +35,13 @@ class PeticionesController extends AppController
      */
 
     public function admin(){
+   
         $this->paginate = [
             'contain' => ['Categorias'], 
         ];
 
         $peticiones = $this->Peticiones;
+        $this->Authorization->authorize($peticiones);
         $peticiones = $this->paginate($peticiones);
         $this->set(compact('peticiones'));
     }
@@ -45,24 +49,19 @@ class PeticionesController extends AppController
     /**
      * Change state method
      * 
-     * Chenge the state pending to accept
+     * Change the state pending to accept
      */
 
     public function change($id = null){
         $peticione = $this->Peticiones->get($id, [
-            'contain' => ['Users'],
+            'contain' => ['Categorias','Users'],
         ]);
 
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $peticione = $this->Peticiones->patchEntity($peticione, $this->request->getData()->estado);
-            if ($this->Peticiones->save($peticione)) {
-                $this->Flash->success(__('The peticione has been saved.'));
-
-                return $this->redirect(['action' => 'admin']);
-            }
-            $this->Flash->error(__('The peticione could not be saved. Please, try again.'));
-        }
-
+        $peticione->estado = 'aceptada';
+        //$peticione = $this->Peticiones->patchEntity($peticione, $this->request->getData()->estado);
+        $this->Peticiones->save($peticione);
+        $this->redirect(['action' => 'admin']);
+            
     }
 
     /**
@@ -74,11 +73,14 @@ class PeticionesController extends AppController
      */
     public function view($id = null)
     {
+        $this->Authorization->skipAuthorization();
         $peticione = $this->Peticiones->get($id, [
             'contain' => ['Categorias', 'Users'],
         ]);
 
         $this->set(compact('peticione'));
+
+        $this->Authorization->skipAuthorization();
     }
 
     public function beforeFilter(EventInterface $event){

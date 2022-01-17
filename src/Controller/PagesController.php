@@ -78,6 +78,7 @@ class PagesController extends AppController
 
         parent::beforeFilter($event);
         $this->Authentication->addUnauthenticatedActions(['display']);
+        $this->Authorization->skipAuthorization();
     }
 
 }
