@@ -408,49 +408,20 @@
                                     <div class="col-md-12 visible-xs visible-sm sm-pln">
                                         <div class="topics mbn">
                                             <h5 class="mtn sm-mlm xs-mlxs">Temas</h5>
-                                            <div class="hidden-xs hidden-sm"><a href="/t/sanidad?source_location=homepage" title="sanidad" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">sanidad</a><a href="/t/animales-7?source_location=homepage" title="animales" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">animales</a><a href="/t/medio-ambiente-3?source_location=homepage" title="medio ambiente" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">medio ambiente</a><a href="/t/educación-4?source_location=homepage" title="educación" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">educación</a><a href="/t/justicia-económica-3?source_location=homepage" title="justicia económica" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">justicia económica</a><a href="/t/refugiados-2?source_location=homepage" title="refugiados" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">refugiados</a><a href="/t/derechos-de-las-mujeres-2?source_location=homepage" title="derechos de las mujeres" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">derechos de las mujeres</a><a href="/t/lgtb-2?source_location=homepage" title="lgtb" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">lgtb</a><a href="/t/alimentación-3?source_location=homepage" title="alimentación" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">alimentación</a><a href="/t/derechos-de-la-mujer-es-es?source_location=homepage" title="Derechos de la mujer" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">Derechos de la mujer</a><a href="/t/feminismo-2?source_location=homepage" title="feminismo" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">feminismo</a><a href="/t/mujeres-en-mexico-es-es?source_location=homepage" title="mujeres en mexico" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">mujeres en mexico</a></div>
+                                            <div class="hidden-xs hidden-sm"></div>
                                             <div class="visible-xs visible-sm">
                                                 <div class="row">
                                                     <hr class="mtn">
                                                     <div class="list-xs-scrollable list-sm-scrollable pvxxs plm xs-plxs">
-                                                        <ul class="list-inline pbxxs list-xs-scrollable-row list-sm-scrollable-row row">
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/sanidad?source_location=homepage" title="sanidad" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">sanidad</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/animales-7?source_location=homepage" title="animales" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">animales</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/medio-ambiente-3?source_location=homepage" title="medio ambiente" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">medio ambiente</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/educación-4?source_location=homepage" title="educación" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">educación</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/justicia-económica-3?source_location=homepage" title="justicia económica" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">justicia económica</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/refugiados-2?source_location=homepage" title="refugiados" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">refugiados</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/derechos-de-las-mujeres-2?source_location=homepage" title="derechos de las mujeres" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">derechos de las mujeres</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/lgtb-2?source_location=homepage" title="lgtb" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">lgtb</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/alimentación-3?source_location=homepage" title="alimentación" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">alimentación</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/derechos-de-la-mujer-es-es?source_location=homepage" title="Derechos de la mujer" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">Derechos de la mujer</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/feminismo-2?source_location=homepage" title="feminismo" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">feminismo</div>
-                                                                </a></li>
-                                                            <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/mujeres-en-mexico-es-es?source_location=homepage" title="mujeres en mexico" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                    <div class="type-capitalize type-ellipsis">mujeres en mexico</div>
-                                                                </a></li>
-                                                        </ul>
+                                                    <?= $this->Html->link('sanidad', ['controller' => 'Peticiones', 'action' => 'filtrar', 1, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('medio ambiente', ['controller' => 'Peticiones', 'action' => 'filtrar', 2, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('educación', ['controller' => 'Peticiones', 'action' => 'filtrar', 3, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('justicia económica', ['controller' => 'Peticiones', 'action' => 'filtrar', 4, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('refugiados', ['controller' => 'Peticiones', 'action' => 'filtrar', 5, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('derecho de las mujeres', ['controller' => 'Peticiones', 'action' => 'filtrar', 6, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('LGTB', ['controller' => 'Peticiones', 'action' => 'filtrar', 7, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('alimientacion', ['controller' => 'Peticiones', 'action' => 'filtrar', 8, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                            <?= $this->Html->link('patrimonio cultural', ['controller' => 'Peticiones', 'action' => 'filtrar', 9, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
                                                     </div>
                                                     <hr class="mbn">
                                                 </div>
@@ -1187,52 +1158,21 @@
                                 <section class="plm mtxxxl ptl">
                                     <div class="topics mbn">
                                         <h5 class="mtn sm-mlm xs-mlxs">Temas</h5>
-                                        <div class="hidden-xs hidden-sm"><a href="/t/sanidad?source_location=homepage" title="sanidad" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">sanidad</a><a href="/t/animales-7?source_location=homepage" title="animales" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">animales</a><a href="/t/medio-ambiente-3?source_location=homepage" title="medio ambiente" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">medio ambiente</a><a href="/t/educación-4?source_location=homepage" title="educación" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">educación</a><a href="/t/justicia-económica-3?source_location=homepage" title="justicia económica" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">justicia económica</a><a href="/t/refugiados-2?source_location=homepage" title="refugiados" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">refugiados</a><a href="/t/derechos-de-las-mujeres-2?source_location=homepage" title="derechos de las mujeres" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">derechos de las mujeres</a><a href="/t/lgtb-2?source_location=homepage" title="lgtb" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">lgtb</a><a href="/t/alimentación-3?source_location=homepage" title="alimentación" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">alimentación</a><a href="/t/derechos-de-la-mujer-es-es?source_location=homepage" title="Derechos de la mujer" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">Derechos de la mujer</a><a href="/t/feminismo-2?source_location=homepage" title="feminismo" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">feminismo</a><a href="/t/mujeres-en-mexico-es-es?source_location=homepage" title="mujeres en mexico" class="pill mhxxxs mtxxxs mbxxs type-s type-capitalize">mujeres en mexico</a></div>
+                                        <div class="hidden-xs hidden-sm"><?= $this->Html->link('sanidad', ['controller' => 'Peticiones', 'action' => 'filtrar', 1, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('medio ambiente', ['controller' => 'Peticiones', 'action' => 'filtrar', 2, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('educación', ['controller' => 'Peticiones', 'action' => 'filtrar', 3, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('justicia económica', ['controller' => 'Peticiones', 'action' => 'filtrar', 4, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('refugiados', ['controller' => 'Peticiones', 'action' => 'filtrar', 5, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('derecho de las mujeres', ['controller' => 'Peticiones', 'action' => 'filtrar', 6, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('LGTB', ['controller' => 'Peticiones', 'action' => 'filtrar', 7, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('alimientacion', ['controller' => 'Peticiones', 'action' => 'filtrar', 8, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?>
+                                                <?= $this->Html->link('patrimonio cultural', ['controller' => 'Peticiones', 'action' => 'filtrar', 9, '_full' => true], ['class' => 'pill mhxxxs mtxxxs mbxxs type-s type-capitalize']); ?></div>
                                         <div class="visible-xs visible-sm">
                                             <div class="row">
                                                 <hr class="mtn">
                                                 <div class="list-xs-scrollable list-sm-scrollable pvxxs plm xs-plxs">
-                                                    <ul class="list-inline pbxxs list-xs-scrollable-row list-sm-scrollable-row row">
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/sanidad?source_location=homepage" title="sanidad" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">sanidad</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/animales-7?source_location=homepage" title="animales" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">animales</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/medio-ambiente-3?source_location=homepage" title="medio ambiente" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">medio ambiente</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/educación-4?source_location=homepage" title="educación" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">educación</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/justicia-económica-3?source_location=homepage" title="justicia económica" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">justicia económica</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/refugiados-2?source_location=homepage" title="refugiados" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">refugiados</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/derechos-de-las-mujeres-2?source_location=homepage" title="derechos de las mujeres" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">derechos de las mujeres</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/lgtb-2?source_location=homepage" title="lgtb" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">lgtb</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/alimentación-3?source_location=homepage" title="alimentación" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">alimentación</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/derechos-de-la-mujer-es-es?source_location=homepage" title="Derechos de la mujer" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">Derechos de la mujer</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/feminismo-2?source_location=homepage" title="feminismo" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">feminismo</div>
-                                                            </a></li>
-                                                        <li class="list-xs-scrollable-item" list-sm-scrollable-item="" mlxs="" mtxxs=""><a href="/t/mujeres-en-mexico-es-es?source_location=homepage" title="mujeres en mexico" class="pill bg-brighter mln mrxxxs mtxxxs mbxxs xs-man">
-                                                                <div class="type-capitalize type-ellipsis">mujeres en mexico</div>
-                                                            </a></li>
-                                                    </ul>
                                                 </div>
                                                 <hr class="mbn">
-                                            </div>
                                         </div>
                                     </div>
                                 </section>

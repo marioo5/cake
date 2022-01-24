@@ -58,7 +58,7 @@ class UserPolicy
     public function canDelete(IdentityInterface $user, User $resource)
     {
 
-        if($user['role']=='admin')return true;
+        if($user['rol']=='admin')return true;
         return false;
 
     }
@@ -72,7 +72,7 @@ class UserPolicy
      */
     public function canView(IdentityInterface $user, User $resource)
     {
-        if($user['role']=='admin')return true;
+        if($user['rol']=='admin')return true;
         return false;
     }
 }

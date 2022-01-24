@@ -20,19 +20,21 @@ class PeticionePolicy
      */
     public function canAdd(IdentityInterface $user, Peticione $peticione)
     {
-        if($user['role']=='admin')return true;
-        return false;
+        return true;
+       
     }
 
-    public function canAdmin(IdentityInterface $user, Peticione $peticione)
-    {
-        if($user['role']=='admin')return true;
-        return false;
-    }
+  
 
     public function canIndex(IdentityInterface $user, Peticione $peticione)
     {
-        if($user['role']=='admin')return true;
+        if($user['rol']=='admin')return true;
+        return false;
+    }
+
+    public function canChange(IdentityInterface $user, Peticione $peticione)
+    {
+        if($user['rol']=='admin')return true;
         return false;
     }
 
@@ -45,7 +47,7 @@ class PeticionePolicy
      */
     public function canUpdate(IdentityInterface $user, Peticione $peticione)
     {
-        if($user['role']=='admin')return true;
+        if($user['rol']=='admin')return true;
         return false;
     }
 
@@ -58,7 +60,7 @@ class PeticionePolicy
      */
     public function canDelete(IdentityInterface $user, Peticione $peticione)
     {
-        if($user['role']=='admin')return true;
+        if($user['rol']=='admin')return true;
         return false;
     }
 

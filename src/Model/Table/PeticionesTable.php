@@ -61,13 +61,13 @@ class PeticionesTable extends Table
             'foreignKey' => 'categorias_id',
         ]);
         $this->belongsTo('Users', [
-            'foreignKey' => 'users_id',
+            'foreignKey' => 'user_id',
         ]);
-        /*$this->belongsToMany('Users', [
+        $this->belongsToMany('Users', [
             'foreignKey' => 'peticione_id',
             'targetForeignKey' => 'user_id',
             'joinTable' => 'peticiones_users',
-        ]);*/
+        ]);
     }
 
     /**
@@ -120,7 +120,7 @@ class PeticionesTable extends Table
     public function buildRules(RulesChecker $rules): RulesChecker
     {
         $rules->add($rules->existsIn('categorias_id', 'Categorias'), ['errorField' => 'categorias_id']);
-        $rules->add($rules->existsIn('users_id', 'Users'), ['errorField' => 'users_id']);
+        $rules->add($rules->existsIn('user_id', 'Users'), ['errorField' => 'users_id']);
 
         return $rules;
     }

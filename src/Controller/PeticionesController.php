@@ -57,6 +57,8 @@ class PeticionesController extends AppController
             'contain' => ['Categorias','Users'],
         ]);
 
+        $this->Authorization->authorize($peticione);
+
         $peticione->estado = 'aceptada';
         //$peticione = $this->Peticiones->patchEntity($peticione, $this->request->getData()->estado);
         $this->Peticiones->save($peticione);
@@ -86,7 +88,7 @@ class PeticionesController extends AppController
     public function beforeFilter(EventInterface $event){
 
         parent::beforeFilter($event);
-        $this->Authentication->addUnauthenticatedActions(['view']);
+        $this->Authentication->addUnauthenticatedActions(['view','filtrar']);
     }
 
     /**
@@ -97,6 +99,7 @@ class PeticionesController extends AppController
     public function add()
     {
         $peticione = $this->Peticiones->newEmptyEntity();
+        $this->Authorization->authorize($peticione);
         if ($this->request->is('post')) {
             $peticione = $this->Peticiones->patchEntity($peticione, $this->request->getData());
             if ($this->Peticiones->save($peticione)) {
@@ -155,5 +158,29 @@ class PeticionesController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function filtrar($id = null) {
+
+        $this->Authorization->skipAuthorization();
+
+        $peticione = $this->Peticiones->find()->where(['categorias_id IS' => $id]);
+
+        $peticiones = $this->paginate($peticione);
+
+        $this->set(compact('peticione'));
+
+    }
+
+    public function firmar($id = null, $peticioneid = null){
+        $peticione = $this->Peticiones->get($peticioneid);
+        $user = $this->Users->get($id);
+
+        $this->Peticiones->Users->link($peticione, [$user]);
+    }
+
+    public function showFirmantes($id = null){
+        $users = $this->Users->get($id);
+        $query = $users->find('all')->contain(['Addresses'])->all();
     }
 }

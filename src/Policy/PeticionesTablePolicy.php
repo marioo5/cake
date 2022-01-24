@@ -12,7 +12,17 @@ class PeticionesTablePolicy
 {
     public function canAdmin(IdentityInterface $user)
     {
-        if($user['role']=='admin')return true;
+    
+        if($user['rol']=='admin')return true;
         return false;
     }
+
+    public function canFiltrar(IdentityInterface $user)
+    {
+    
+        if($user['rol']=='admin')return true;
+        return false;
+    }
+
+
 }

@@ -6,7 +6,6 @@
 ?>
 <div class="peticiones index content">
     <?= $this->Html->link(__('New Peticione'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <?= $this->Html->link(__('Ver Peticiones '), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Peticiones') ?></h3>
     <div class="table-responsive">
         <table>
@@ -20,25 +19,19 @@
                     <th><?= $this->Paginator->sort('photo') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('updated') ?></th>
-                    <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($peticiones as $peticione): ?>
+                <?php foreach ($peticione as $peticiones): ?>
                 <tr>
-                    <td><?= h($peticione->titulo) ?></td>
-                    <td><?= $this->Number->format($peticione->firmantes) ?></td>
-                    <td><?= h($peticione->estado) ?></td>
-                    <td><?= $peticione->has('categoria') ? $this->Html->link($peticione->categoria->id, ['controller' => 'Categorias', 'action' => 'view', $peticione->categoria->id]) : '' ?></td>
-                    <td><?= $this->Number->format($peticione->users_id) ?></td>
-                    <td><?= $this->Html->image('/webroot/files/PeticioneS/photo/'.$peticione->photo, ['alt' => 'CakePHP']);?></td>
-                    <td><?= h($peticione->created) ?></td>
-                    <td><?= h($peticione->updated) ?></td>
-                    <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $peticione->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $peticione->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $peticione->id], ['confirm' => __('Are you sure you want to delete # {0}?', $peticione->id)]) ?>
-                    </td>
+                    <td><?= h($peticiones->titulo) ?></td>
+                    <td><?= $this->Number->format($peticiones->firmantes) ?></td>
+                    <td><?= h($peticiones->estado) ?></td>
+                    <td><?= $peticiones->has('categoria') ? $this->Html->link($peticiones->categoria->id, ['controller' => 'Categorias', 'action' => 'view', $peticiones->categoria->id]) : '' ?></td>
+                    <td><?= $this->Number->format($peticiones->users_id) ?></td>
+                    <td><?= $this->Html->image('/webroot/files/peticiones/photo/'.$peticiones->photo, ['alt' => 'CakePHP']);?></td>
+                    <td><?= h($peticiones->created) ?></td>
+                    <td><?= h($peticiones->updated) ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
