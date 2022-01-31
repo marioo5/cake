@@ -148,6 +148,13 @@ $this->loadHelper('Authentication.Identity');
                                             <li class="js-membership"><a
                                                     href="s/socios2d5c.html?source_location=member_link_header"
                                                     class="link-stealth header-height"><span>Programa de socios/as</span></a></li>
+
+                                        <?php if ($this->Identity->isLoggedIn()) : ?>    
+                                            
+                                            <li class="mrs">
+                                                <?= $this->Html->link('Mis firmas', ['controller' => 'Peticiones', 'action' => 'showFirmantes', '_full' => true], ['class' => 'link-stealth header-height']); ?>
+                                            </li>
+                                        <?php endif; ?>
                                         </ul>
                                     </div>
                                 </li>

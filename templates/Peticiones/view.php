@@ -12,6 +12,7 @@
             <?= $this->Form->postLink(__('Delete Peticione'), ['action' => 'delete', $peticione->id], ['confirm' => __('Are you sure you want to delete # {0}?', $peticione->id), 'class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('List Peticiones'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
             <?= $this->Html->link(__('New Peticione'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Sign Request'), ['controller' => 'Peticiones', 'action' => 'firmar', $peticione->id], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">

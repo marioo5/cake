@@ -172,15 +172,28 @@ class PeticionesController extends AppController
 
     }
 
-    public function firmar($id = null, $peticioneid = null){
-        $peticione = $this->Peticiones->get($peticioneid);
-        $user = $this->Users->get($id);
+    public function firmar($id = null){
+        $peticionFirmar = $this->Peticiones->get($id);
+        $usuarios = $this->getTableLocator()->get('users');
+        $usuarioFirmar = $usuarios->get($this->request->getSession()->read('Auth.id'));
+        $this->Authorization->skipAuthorization();
+        if ($this->Peticiones->Users->link($peticionFirmar, [$usuarioFirmar])) {
+            
+            return $this->redirect(['action' => 'view', $id]);
+        }
 
-        $this->Peticiones->Users->link($peticione, [$user]);
     }
 
-    public function showFirmantes($id = null){
-        $users = $this->Users->get($id);
-        $query = $users->find('all')->contain(['Addresses'])->all();
+    public function showFirmantes(){
+        $this->Authorization->skipAuthorization();
+        $id = $this->request->getSession()->read('Auth.id');
+        $peticiones = $this->Peticiones->find();
+        $peticiones->matching('Users', function ($q) use ($id) {
+            return $q
+                ->where(['Users.id' => $id]);
+        });
+
+        $peticiones = $this->paginate($peticiones);
+        $this->set(compact('peticiones'));
     }
 }
